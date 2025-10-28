@@ -302,12 +302,12 @@ function showResults() {
     
     // Display score text with performance message
     let performanceMessage = '';
-    if (percentage >= 90) performanceMessage = '🎉 Outstanding! You\'re a genius!';
+    if (percentage >= 90) performanceMessage = 'Outstanding! You\'re a genius!';
     else if (percentage >= 80) performanceMessage = ' Excellent work! You\'re a quiz master!';
     else if (percentage >= 70) performanceMessage = 'Great job! Keep it up!';
     else if (percentage >= 60) performanceMessage = 'Good effort! You\'re doing well!';
     else if (percentage >= 50) performanceMessage = ' Not bad! Keep practicing!';
-    else performanceMessage = '📚 Keep learning and try again!';
+    else performanceMessage = ' Keep learning and try again!';
     
     document.getElementById('finalText').textContent = 
         `You scored ${score} out of ${questions.length} - ${performanceMessage}`;
